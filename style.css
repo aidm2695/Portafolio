@@ -1,0 +1,887 @@
+* {
+    padding: 0;
+    margin: 0;
+    width: auto;
+
+
+
+}
+
+html {
+    scroll-behavior: smooth;
+    scroll-padding: 88px;
+}
+
+body {
+    background-color: darkslategrey;
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+}
+
+.nav_menu {
+    height: 88px;
+    min-width: 100vw;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 32px;
+    background-color: white;
+    font-family: Raleway;
+    font-size: 16px;
+
+}
+
+.nav_menu a {
+    text-decoration: none;
+    font-family: Raleway;
+    font-size: 18px;
+    position: relative;
+    transition: 0.4s all ease;
+}
+
+.nav_menu {
+    position: fixed;
+    top: 0;
+    z-index: 999;
+}
+
+.nav_menu a:hover {
+    color: blue;
+    transition: 0.4s all ease;
+
+}
+
+.nav_menu a::after {
+    content: ' ';
+    position: absolute;
+    width: 100%;
+    transform: scaleX(0);
+    height: 2px;
+    bottom: -5px;
+    left: 0;
+    background-color: #0051ff;
+    transform-origin: bottom right;
+    transition: transform 0.5s ease-out;
+}
+
+.nav_menu a:hover::after {
+    transform: scaleX(1);
+    transform-origin: bottom left;
+}
+
+.nombre_logo {
+    display: flex;
+    align-items: center;
+    margin-right: 349px;
+}
+
+.img_stars {
+    margin-right: 8px;
+}
+
+.p_nombre {
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+.section_resume {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 368px;
+    width: 1136px;
+    gap: 17px;
+    padding-top: 90px;
+}
+
+.div_mi_descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 246px;
+    width: 751px;
+    gap: 24px;
+}
+
+.div_texto_mi_descripcion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+
+}
+
+.p_nombre_grande {
+    font-family: Raleway;
+    font-weight: bold;
+    font-size: 52px;
+}
+
+.p_mi_descripcion {
+    font-family: Raleway;
+    font-size: 22px;
+    text-align: left;
+}
+
+.nav_redes {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 50px;
+}
+
+.nav_redes:hover a:not(:hover) {
+    opacity: .7;
+    transform: scale(.85);
+}
+
+.div_foto_perfil {
+    height: 368px;
+    width: 368px;
+
+}
+
+.foto_perfil {
+    width: 368px;
+    height: 368px;
+    border-radius: 50%;
+}
+
+.section_sobre_mi {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    height: 383px;
+    gap: 64px;
+    background-color: #EAF2FD;
+    min-width: 100vw;
+}
+
+.div_sobre_mi {
+    width: 1136px;
+    gap: 16px;
+}
+
+.p_titulo_sobre_mi {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.p_descripcion_sobre_mi {
+    width: 751px;
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+.section_mi_info {
+    min-width: 100vw;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 88px;
+
+}
+
+.div_skills,
+.div_hobbies {
+    width: 1136px;
+    height: 244px;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_iconos_skills,
+.div_iconos_hobbies {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1136px;
+    height: 174px;
+    gap: 35px;
+}
+
+.titulo_skills,
+.titulo_hobbies {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: bold;
+}
+
+.img_hobbies_skills {
+    width: 150px;
+    height: 150px;
+}
+
+.div_formacion {
+    height: 581px;
+    width: 100vw;
+    background-color: #EAF2FD;
+    gap: 32px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.titulo_formacion_academica,
+.p_titulo_experiencia,
+.p_titulo_contacto {
+    font-family: Raleway;
+    font-size: 32px;
+    font-weight: bold;
+
+}
+
+.div_formaciones {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 1136px;
+    height: 347px;
+    gap: 16px;
+}
+
+.div_info_formacion {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    gap: 8px;
+}
+
+.img_formaciones {
+    width: 368px;
+    height: 268px;
+
+}
+
+.titulo_formacion,
+.p_titulo_proyecto {
+    font-family: Raleway;
+    font-size: 22px;
+    font-weight: bold;
+
+}
+
+.anio_formacion,
+.p_empresa_proyecto,
+.p_contactarme {
+    font-family: Raleway;
+    font-size: 16px;
+    font-weight: medium;
+}
+
+.section_experiencia {
+    min-width: 100vw;
+    height: 1000px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 32px;
+
+
+}
+
+.div_experiencia {
+    width: 1136px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+
+    gap: 64px;
+
+}
+
+.div_proyecto {
+    height: 406px;
+    display: flex;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.img_vista_previa_proyecto {
+    width: 752px;
+    height: 406px;
+}
+
+.div_info_proyecto {
+    display: flex;
+    flex-direction: column;
+    gap: 14px;
+}
+
+.div_btn_repo_demo {
+    display: flex;
+    gap: 16px;
+}
+
+.a_repo {
+    width: 116px;
+
+    font-family: Raleway;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+
+    text-decoration: none;
+    background-color: #EAF2FD;
+    border-color: #2A7AE4;
+    border-radius: 8px;
+    color: #2A7AE4;
+}
+
+.a_demo {
+    width: 116px;
+    font-family: Raleway;
+    font-size: 16px;
+    text-align: center;
+    padding-top: 15px;
+    padding-bottom: 15px;
+    text-decoration: none;
+    background-color: #2A7AE4;
+    border: none;
+    border-radius: 8px;
+    color: #EAF2FD
+}
+
+.btn_demo,
+.btn_repo:hover {
+    cursor: pointer;
+}
+
+.section_contacto {
+    min-width: 100vw;
+    background-color: #EAF2FD;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.div_contacto {
+    width: 1440px;
+    height: 788px;
+    gap: 16px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+
+.div_form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+.div_contactarme {
+    width: 656px;
+    height: 84px;
+    gap: 8px;
+    display: flex;
+    flex-direction: column;
+
+}
+
+.form {
+    display: flex;
+    flex-direction: column;
+    gap: 32px;
+}
+
+#name,
+#mail,
+#asunto,
+#mensaje {
+    font-family: Raleway;
+    font-size: 16px;
+    border-radius: 7px;
+    padding: 10px;
+
+}
+
+#btn_enviar {
+    width: 144px;
+    height: 51px;
+   
+}
+
+footer {
+    min-width: 100vw;
+    height: 70px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.p_desarrollado_por {
+    font-family: Raleway;
+    font-size: 16px;
+}
+
+
+/*TABLET*/
+@media (max-width: 968px) {
+    body {
+        width: 968px;
+
+    }
+
+    .nav_menu {
+        height: 88px;
+        width: 968px;
+        gap: 0;
+    }
+
+    .nombre_logo {
+        margin-right: 200px;
+    }
+
+    .img_stars {
+        margin-right: 8px;
+    }
+
+    .p_nombre {
+        font-family: Raleway;
+        font-size: 14px;
+    }
+
+    .nav_menu a {
+        visibility: hidden;
+    }
+
+    .section_resume {
+        height: 210px;
+        width: 968px;
+        gap: 8px;
+    }
+
+    .div_mi_descripcion {
+        height: 130px;
+        width: 524px;
+        gap: 8px;
+    }
+
+    .p_nombre_grande {
+        font-size: 22px;
+    }
+
+    .p_mi_descripcion {
+        font-size: 16px;
+    }
+
+    .nav_redes {
+        gap: 32px;
+    }
+
+    .div_foto_perfil {
+        height: 146px;
+        width: 146px;
+    }
+
+    .foto_perfil {
+        height: 146px;
+        width: 146px;
+        border-radius: 50%;
+    }
+
+    .section_sobre_mi {
+        width: 968px;
+        height: 286px;
+        gap: 32px;
+    }
+
+    .div_sobre_mi {
+        width: 704px;
+        height: 222px;
+        gap: 16px;
+    }
+
+    .p_titulo_sobre_mi {
+        font-size: 22px;
+    }
+
+    .p_descripcion_sobre_mi {
+        width: 704px;
+        height: 112px;
+    }
+
+    .section_mi_info {
+        width: 968px;
+        gap: 0;
+        display: flex;
+        flex-direction: column;
+        justify-content: flex-start;
+        align-items: flex-start;
+    }
+
+    .div_skills,
+    .div_hobbies {
+        width: 968px;
+        height: 200px;
+
+    }
+
+    .div_iconos_skills,
+    .div_iconos_hobbies {
+        width: 704px;
+        height: 118px;
+    }
+
+    .titulo_skills,
+    .titulo_hobbies {
+        font-size: 22px;
+    }
+
+    .img_hobbies_skills {
+        width: 180px;
+        height: 120px;
+    }
+
+    .div_formacion {
+        height: 291px;
+        width: 968px;
+    }
+
+    .titulo_formacion_academica,
+    .p_titulo_experiencia,
+    .p_titulo_contacto {
+        font-size: 22px;
+    }
+
+    .div_formaciones {
+        width: 704px;
+        height: 169px;
+    }
+
+    .img_formaciones {
+        width: 224px;
+        height: 118px;
+    }
+
+    .titulo_formacion,
+    .p_titulo_proyecto,
+    .p_contactarme {
+        font-size: 16px;
+    }
+
+    .anio_formacion,
+    .p_empresa_proyecto {
+        font-size: 14px;
+    }
+
+    .section_experiencia {
+        width: 968px;
+        gap: 16px;
+    }
+
+    .div_experiencia {
+        width: 968px;
+        flex-direction: column;
+    }
+
+    .div_proyecto {
+        flex-direction: column;
+        width: 704px;
+        height: 427px;
+    }
+
+    .img_vista_previa_proyecto {
+        width: 704px;
+        height: 320px;
+    }
+
+    .div_info_proyecto {
+        width: 704px;
+        height: 91px;
+        gap: 10px;
+    }
+
+    .btn_repo,
+    .btn_demo {
+        width: 108px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .section_contacto {
+        width: 968px;
+        height: 637px;
+    }
+
+    .div_contacto {
+        width: 0;
+        height: 0;
+    }
+
+    .img_contacto {
+        visibility: hidden;
+    }
+
+    .div_form {
+        width: 704px;
+        height: 573px;
+        margin-left: -605px;
+    }
+
+    .div_contactarme {
+        width: 656px;
+    }
+
+    .form {
+        width: 704px;
+        height: 397px;
+    }
+
+    footer {
+        width: 968px;
+        height: 50px;
+    }
+}
+
+
+/*CELULAR*/
+@media (max-width: 480px) {
+    body {
+        width: 480px;
+    }
+
+    .nav_menu {
+        height: 56px;
+        width: 480px;
+        gap: 0;
+    }
+
+    .nombre_logo {
+        margin-right: 15px;
+    }
+
+    .img_stars {
+        margin-right: 6px;
+    }
+
+    .p_nombre {
+        font-family: Raleway;
+        font-size: 12px;
+    }
+
+    .nav_menu a {
+        visibility: hidden;
+    }
+
+    .section_resume {
+        flex-direction: column-reverse;
+        align-items: start;
+
+        height: 294px;
+        width: 480px;
+        gap: 16px;
+    }
+
+    .div_mi_descripcion {
+        height: 148px;
+        width: 450px;
+        gap: 16px;
+    }
+
+    .p_nombre_grande {
+        font-size: 22px;
+    }
+
+    .p_mi_descripcion {
+        font-size: 14px;
+    }
+
+    .nav_redes {
+        gap: 8px;
+    }
+
+    .div_foto_perfil {
+        height: 98px;
+        width: 98px;
+    }
+
+    .foto_perfil {
+        height: 98px;
+        width: 98px;
+        border-radius: 50%;
+    }
+
+    .section_sobre_mi {
+        width: 480px;
+        height: 280px;
+        gap: 16px;
+    }
+
+    .div_sobre_mi {
+        width: 450px;
+        height: 200px;
+        gap: 16px;
+    }
+
+    .p_titulo_sobre_mi {
+        font-size: 22px;
+    }
+
+    .p_descripcion_sobre_mi {
+        width: 450px;
+        height: 190px;
+    }
+
+    .section_mi_info {
+        width: 480px;
+        
+        gap: 0;
+    }
+
+    .div_skills,
+    .div_hobbies {
+        width: 480px;
+        height: 500px;
+        display: flex;
+        justify-content: flex-start;
+        align-items: center;
+
+    }
+
+    .div_iconos_skills,
+    .div_iconos_hobbies {
+        display: flex;
+        flex-direction: row;
+        flex-wrap: wrap;
+        width: 328px;
+        height: 118px;
+    }
+
+    .titulo_skills,
+    .titulo_hobbies {
+        font-size: 22px;
+    }
+
+    .img_hobbies_skills {
+        width: 156px;
+        height: 118px;
+    }
+
+    .div_formacion {
+        height: 600px;
+        width: 480px;
+
+    }
+
+    .titulo_formacion_academica,
+    .p_titulo_experiencia,
+    .p_titulo_contacto {
+        font-size: 22px;
+    }
+
+    .div_formaciones {
+        width: 400px;
+        height: 539px;
+        flex-direction: column;
+        justify-content: flex-start;
+
+    }
+
+    .img_formaciones {
+        width: 350px;
+        height: 169px;
+    }
+
+    .titulo_formacion,
+    .p_titulo_proyecto,
+    .p_contactarme {
+        font-size: 16px;
+    }
+
+    .anio_formacion,
+    .p_empresa_proyecto {
+        font-size: 14px;
+    }
+
+    .section_experiencia {
+        width: 480px;
+        height: 600px;
+        gap: 16px;
+
+    }
+
+    .div_experiencia {
+        width: 450px;
+        flex-direction: column;
+        gap: 10px;
+
+    }
+
+    .div_proyecto {
+        flex-direction: column;
+        justify-content: flex-start;
+        width: 450px;
+        height: 280px;
+    }
+
+    .img_vista_previa_proyecto {
+        width: 340px;
+        height: 145px;
+    }
+
+    .div_info_proyecto {
+        width: 450px;
+        height: 91px;
+        gap: 8px;
+
+    }
+
+    .btn_repo,
+    .btn_demo {
+        width: 108px;
+        height: 40px;
+        font-size: 14px;
+    }
+
+    .section_contacto {
+        width: 480px;
+        height: 600px;
+    }
+
+    .div_contacto {
+        width: 0;
+        height: 0;
+    }
+
+    .img_contacto {
+        visibility: hidden;
+    }
+
+    .div_form {
+        width: 430px;
+        height: 550px;
+        margin-left: -605px;
+    }
+
+    .div_contactarme {
+        width: 430px;
+    }
+
+    .form {
+        width: 430px;
+        height: 397px;
+    }
+
+    footer {
+        width: 480px;
+        height: 50px;
+    }
+}
